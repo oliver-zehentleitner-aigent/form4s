@@ -68,10 +68,15 @@ test/src/            # package form4s — utest suites + Playwright E2E
 - **Metals** (Scala LSP) — remote at `http://127.0.0.1:33215/mcp` (config in `opencode.jsonc`). Useful tools: `compile-full`/`compile-module`, `test`, `format-file`, `get-source`/`get-docs`/`inspect`, `get-usages`, `glob-search`
 - **BrowserMCP** — local via `npx @browsermcp/mcp@latest`
 
-<!-- keep-the-why:config -->
-- context: `context/`
-- init: complete
-- context-schema: 0.6.4
-- capture-confirmation: confirm-always
-- source-reference: never
-<!-- /keep-the-why:config -->
+## Keep the Why
+
+This project records the reasoning behind its code with the Keep the Why
+skill (https://keepthewhy.com) — the `.keep-the-why` file at the project
+root is its config. Before doing anything else in a session, whatever the
+first request is about, load the skill: in opencode or Claude Code, invoke the
+`keep-the-why` skill (skill tool); in any other agent, read the skill's
+`SKILL.md` from where it is installed and follow it, including the
+`references/*.md` files it points to for the situation at hand.
+
+Keep the Why's config for this project migrated to .keep-the-why on
+2026-10-06 — requires skill version 0.10.0 or later to read it.
